@@ -1,8 +1,8 @@
 #include<string.h>
 #include<stdio.h>
 #include"libft.h"
-/*
-int main() {
+
+/*int main() {
 
     char array [] = { "salut"};
     size_t size = sizeof( char ) * 8;
@@ -25,20 +25,41 @@ int main() {
     
     return 0;
 }*/
-
-int main() 
+int main()
 {
-  // char array[] = {"123456"};
-	//char *c;
-//	char array2[] = {"14"};
-  //  size_t size = sizeof(char) * 3;
-	//char c = '4';
+  int i = 0;
+  char **tab;
+  int x = 0;
+  tab = ft_strsplit("sa---lu",'-');
+  if(tab == NULL)
+    return(0);
+  while (i < 3)
+    {
+      printf("string %d : %s\n", i, tab[i]);
+      i++;
+    }
+  
+  while(x < 3)
+    {
+      free(tab[x++]);
+    }
+  free(tab);
+  return (0);
+}
+/*int main() 
+{
+	char array[] = {"123456"};
+	char *c;
+	char array2[] = {"14"};
+	size_t size = sizeof(char) * 3;
+	char c = '4';
 	char *str;
 	str = ft_strtrim(",,salut,,",",");
 	printf("%s\n",str);
 	free(str);
-}
+}*/
 /*int main()
+
 {
 	printf("[ft_strdel]\n");
 	char **tofree2;

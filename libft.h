@@ -44,3 +44,5 @@ char *ft_substr(char *s, unsigned int start,size_t len);
 char *ft_strmapi(char *s,char (*f)(unsigned int,char));
 char *ft_strjoin(char const *s1, char const*s2);
 char *ft_strtrim(char *s1, char *set);
+char **ft_strsplit(char const *s, char c);
+char *  ft_itoa(int n);
