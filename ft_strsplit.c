@@ -40,7 +40,7 @@ char **ft_strsplit(char *s, char c)
 	char **tab;
 	i = -1;
 	word = nbr_word(s,c);
-	if (!(tab = malloc(sizeof (char *) * (word+1))))
+	if (!s || !(tab = malloc(sizeof (char *) * (word+1))))
 		return(0);
 	while (++i < word)
 	{

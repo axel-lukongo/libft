@@ -25,7 +25,7 @@
     
     return 0;
 }*/
-int main()
+/*int main()
 {
   int i = 0;
   char **tab;
@@ -45,7 +45,7 @@ int main()
     }
   free(tab);
   return (0);
-}
+}*/
 /*int main() 
 {
 	char array[] = {"123456"};
@@ -79,3 +79,61 @@ int main()
 	printf("[expected]\n");
 	printf("yo\n(some adress)\n----------\n(null)\n0\n");
 }*/
+/*int main()
+{
+	char *str;
+	str = ft_itoa(214748364);
+	printf("%s\n",str);
+}*/
+/*int main()
+{
+	ft_putendl_fd("salut",1);
+}*/
+/*int main()
+{
+	ft_putnbr_fd(25,1);
+}*/
+/*int main()
+{
+	t_list *ptr;
+	ptr = ft_lstnew("21");
+	print_list(ptr);
+}*/
+/*int main()
+{
+	t_list *ptr1;
+	t_list *ptr2;
+	ptr1 = ft_lstnew("2");
+	ptr2 = ft_lstnew("5");
+	ft_lstadd_front(&ptr1,ptr2);
+	print_list(ptr1);
+}*/
+int main(void)
+{
+	t_list *lst;
+	t_list *list2;
+	int a = 3;
+	int b = 5;
+	lst = (t_list*)malloc(sizeof(t_list));
+	lst->content = &a;
+	lst->next = (t_list*)malloc(sizeof(t_list));
+	lst->next->content = &b;
+	lst->next->next = (t_list*)malloc(sizeof(t_list));
+	lst->next->next->content = &a;
+	lst->next->next->next = (t_list*)malloc(sizeof(t_list));
+	lst->next->next->next->content = &a;
+	lst->next->next->next->next = (t_list*)malloc(sizeof(t_list));
+	lst->next->next->next->next->content = &b;
+	lst->next->next->next->next->next =  0;
+	//print_list(lst);
+	ft_lstmap()
+	//print_list(lst);
+	while (list2)
+	{
+		free(lst);
+		lst = list2;
+		list2 = list2->next;
+	}
+	free(lst);
+	return (0);
+}
