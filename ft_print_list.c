@@ -8,7 +8,7 @@ void print_list(t_list *beta)
 	{
 		c = beta->content;
 		//c = ((char *)beta->data);
-		printf("[%c]--->", *c);
+		printf("[%d]--->", *c);
 		beta = beta->next;
 	}
 	printf("NULL");

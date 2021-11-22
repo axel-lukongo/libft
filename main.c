@@ -108,26 +108,30 @@
 	ft_lstadd_front(&ptr1,ptr2);
 	print_list(ptr1);
 }*/
+void *f(void *str)
+{
+	int a = 4;
+	str = &a;
+}
 int main(void)
 {
 	t_list *lst;
 	t_list *list2;
 	int a = 3;
-	int b = 5;
 	lst = (t_list*)malloc(sizeof(t_list));
 	lst->content = &a;
 	lst->next = (t_list*)malloc(sizeof(t_list));
-	lst->next->content = &b;
+	lst->next->content = &a;
 	lst->next->next = (t_list*)malloc(sizeof(t_list));
 	lst->next->next->content = &a;
 	lst->next->next->next = (t_list*)malloc(sizeof(t_list));
 	lst->next->next->next->content = &a;
 	lst->next->next->next->next = (t_list*)malloc(sizeof(t_list));
-	lst->next->next->next->next->content = &b;
+	lst->next->next->next->next->content = &a;
 	lst->next->next->next->next->next =  0;
-	//print_list(lst);
-	ft_lstmap()
-	//print_list(lst);
+	print_list(lst);
+	list2 = ft_lstmap(lst,f);
+	print_list(list2);
 	while (list2)
 	{
 		free(lst);
