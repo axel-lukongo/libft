@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/24 11:47:42 by alukongo          #+#    #+#             */
+/*   Updated: 2021/11/24 12:18:59 by alukongo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include<string.h>
 #include<stdio.h>
 #include"libft.h"
@@ -108,12 +120,14 @@
 	ft_lstadd_front(&ptr1,ptr2);
 	print_list(ptr1);
 }*/
+/*
 void *f(void *str)
 {
 	int a = 4;
 	str = &a;
-}
-int main(void)
+	return(str);
+}*/
+/*int main(void)
 {
 	t_list *lst;
 	t_list *list2;
@@ -140,4 +154,59 @@ int main(void)
 	}
 	free(lst);
 	return (0);
+}*/
+/*int main()
+{
+	int c;
+	c = ft_atoi("563");
+	printf("%d\n",c);
+}*/
+/*
+int main() {
+
+    char array [] = { "salut"};
+    size_t size = sizeof( char ) * 8;
+    int length;
+
+    // Display the initial values 
+    for( length=0; length<5; length++) {
+        printf( "%c ", array[ length ] );
+    }
+    printf( "\n" );
+
+    // Reset the memory bloc 
+    ft_bzero( array,size);
+
+    //Display the new values 
+    for( length=0; length<9; length++) {
+        printf( "%d ", array[ length ] );
+    }
+    printf( "\n" );
+    
+    return 0;
+}*/
+/*
+int main() {
+
+    char array [] = { "salut"};
+    size_t size = sizeof( char ) * 8;
+    int length;
+
+    // Display the initial values 
+    for( length=0; length<5; length++) {
+        printf( "%c ", array[ length ] );
+    }
+    printf( "\n" );
+
+    // Reset the memory bloc 
+    memset( array, 2, size );
+
+    //Display the new values 
+    for( length=0; length<9; length++) {
+        printf( "%d ", array[ length ] );
+    }
+    printf( "\n" );
+    
+    return 0;
 }
+*/

@@ -1,11 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/24 13:10:17 by alukongo          #+#    #+#             */
+/*   Updated: 2021/11/24 13:10:51 by alukongo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include<stdio.h>
 #include"libft.h"
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-  int i;
-  i = 0;
-  while(str[i] != '\0')
-    i++;
-  return(i);
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }

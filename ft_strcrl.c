@@ -1,8 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcrl.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/24 12:32:37 by alukongo          #+#    #+#             */
+/*   Updated: 2021/11/24 12:33:31 by alukongo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include"libft.h"
 
-void ft_strcrl(char *s)
+void	ft_strcrl(char *s)
 {
-	int size;
+	int	size;
+
 	size = ft_strlen(s);
-	ft_bzero(s,size);
+	ft_bzero(s, size);
 }
