@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/24 12:31:38 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/25 14:22:46 by alukongo         ###   ########.fr       */
+/*   Created: 2021/11/25 15:29:12 by alukongo          #+#    #+#             */
+/*   Updated: 2021/11/25 16:03:52 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<unistd.h>
+#include"libft.h"
 
-char	*ft_strcpy(char *dest, char *src)
+void	*calloc(size_t nmemb, size_t size)
 {
-	int	i;
+	void	*ptr;
 
-	i = 0;
-	while (src[i])
+	if (nmemb == 0 || size == 0)
 	{
-		dest[i] = src[i];
-		i++;
+		nmemb = 1;
+		size = 1;
 	}
-	dest[i] = '\0';
-	return (dest);
+	ptr = malloc(nmemb * size);
+	if (!ptr)
+	{
+		return (0);
+	}	
+	ft_bzero(ptr, size * nmemb);
 }

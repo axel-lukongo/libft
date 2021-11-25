@@ -1,28 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/24 12:31:38 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/25 14:22:46 by alukongo         ###   ########.fr       */
+/*   Created: 2021/11/25 14:57:16 by alukongo          #+#    #+#             */
+/*   Updated: 2021/11/25 15:26:33 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<unistd.h>
+#include"libft.h"
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strnstr(const char	*big, const char *little, size_t len)
 {
-	int	i;
+	size_t	i;
+	size_t	j;
+	size_t	tmp;
 
 	i = 0;
-	while (src[i])
+	if (!*little)
+		return ((char *)big);
+	while (big[i] && i < len)
 	{
-		dest[i] = src[i];
+		j = 0;
+		tmp = i;
+		while (big[i + j] && big[i + j] == little[j])
+			j++;
+		if (little[j] == '\0')
+		{
+			return ((char *)big + i);
+		}
 		i++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	return (0);
 }

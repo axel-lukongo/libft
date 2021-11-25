@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 13:26:44 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 17:28:14 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/25 14:53:39 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	length_word(char *s, char c)
 	return (len);
 }
 
-int	nbr_word(char *s, char c)
+int	nb_word(char *s, char c)
 {
 	int	word;
 	int	i;
@@ -35,7 +35,7 @@ int	nbr_word(char *s, char c)
 	while (s[i])
 	{
 		while (s[i] == c)
-			s[i++];
+			i++;
 		if (s[i] != c)
 		{
 			word++;
@@ -46,18 +46,13 @@ int	nbr_word(char *s, char c)
 	return (word);
 }
 
-char	**ft_strsplit(char *s, char c)
+char	**writing(char **tab, char *s, char c, int word)
 {
-	int			word;
-	int			i;
-	int			j;
-	char		**tab;
+	int	i;
+	int	j;
 
+	j = 0;
 	i = -1;
-	word = nbr_word(s, c);
-	tab = malloc(sizeof (char *) * (word + 1));
-	if (!s || !tab)
-		return (0);
 	while (++i < word)
 	{
 		while (*s == c)
@@ -73,6 +68,19 @@ char	**ft_strsplit(char *s, char c)
 		}
 		tab[i][j] = '\0';
 	}
-	tab[i] = '\0';
+	tab[i] = 0;
+	return (tab);
+}
+
+char	**ft_strsplit(char *s, char c)
+{
+	int			word;
+	char		**tab;
+
+	word = nb_word(s, c);
+	tab = malloc(sizeof (char *) * (word + 1));
+	if (!s || !tab)
+		return (0);
+	tab = writing(tab, s, c, word);
 	return (tab);
 }

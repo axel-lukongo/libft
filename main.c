@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 11:47:42 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 12:18:59 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/25 15:28:51 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -208,5 +208,45 @@ int main() {
     printf( "\n" );
     
     return 0;
-}
-*/
+}*/
+/*int main()//-----------ft_Split-------
+{
+	char	**str;
+	int		i = 0;
+
+	str = ft_strsplit(",,,,salut,,,je,suis.axel", ',');
+	while (str[i])
+	{
+		printf("%s\n",str[i++]);
+	}
+}*/
+/*int main()
+{
+	printf("[ft_strnstr]\n");
+	char s22[50], s23[50];
+	strcpy(s22, "tritricolor");
+	strcpy(s23, "tric");
+	char *p7;
+	p7 = ft_strnstr(s22, s23, 7);//FT_STRNSTR
+	printf("%s\n", p7);
+	char s220[50], s230[50];
+	strcpy(s220, "ozarabozaraboze123");
+	strcpy(s230, "ozaraboze");
+	char *p70;
+	p70 = strnstr(s220, s230, 15);
+	printf("%s\n", p70);
+	printf("\n");
+	printf("[strnstr]\n");
+	char s24[50], s25[50];
+	strcpy(s24, "tritricolor");
+	strcpy(s25, "tric");
+	char *p8;
+	p8 = strnstr(s24, s25, 7);
+	printf("%s\n", p8);
+	char s240[50], s250[50];
+	strcpy(s240, "ozarabozaraboze123");
+	strcpy(s250, "ozaraboze");
+	char *p80;
+	p80 = strnstr(s240, s250, 15);
+	printf("%s\n", p80);
+}*/
