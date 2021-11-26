@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 11:48:10 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/26 12:13:10 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 16:25:11 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,7 @@ void	ft_lstadd_back(t_list **alst, t_list *new)
 
 	li = *alst;
 	if (!li)
-	{
 		*alst = new;
-		return (*alst);
-	}
 	else
 	{
 		while (li->next != NULL)
