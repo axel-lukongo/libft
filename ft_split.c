@@ -6,14 +6,14 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 13:26:44 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/26 13:45:27 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 16:09:51 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdlib.h>
 #include<stdio.h>
 
-int	length_word(char *s, char c)
+int	length_word(const char *s, char c)
 {
 	int	len;
 
@@ -25,7 +25,7 @@ int	length_word(char *s, char c)
 	return (len);
 }
 
-int	nb_word(char *s, char c)
+int	nb_word(const char *s, char c)
 {
 	int	word;
 	int	i;
@@ -46,7 +46,7 @@ int	nb_word(char *s, char c)
 	return (word);
 }
 
-char	**writing(char **tab, char *s, char c, int word)
+char	**writing(char **tab, const char *s, char c, int word)
 {
 	int	i;
 	int	j;
@@ -73,7 +73,7 @@ char	**writing(char **tab, char *s, char c, int word)
 }
 //good
 
-char	**ft_strsplit(char const *s, char c)
+char	**ft_plit(char const *s, char c)
 {
 	int			word;
 	char		**tab;

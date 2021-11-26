@@ -6,11 +6,12 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/07 09:52:24 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/26 12:30:05 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 16:00:49 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<unistd.h>
+#include"libft.h"
 //good
 void	ft_putnbr(int nb)
 {

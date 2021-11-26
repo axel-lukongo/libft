@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 15:29:12 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/26 12:10:56 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 15:58:42 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,5 @@ void	*calloc(size_t nmemb, size_t size)
 		return (0);
 	}	
 	ft_bzero(ptr, size * nmemb);
+	return (ptr);
 }

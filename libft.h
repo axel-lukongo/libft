@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 17:17:25 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/26 14:05:08 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 16:06:50 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int				ft_strncmp(const char *s1, const char *s2, size_t n);
 char			*ft_strncpy(char *dest, char *src, unsigned int n);
 char			*ft_strncat(char *dest, const char *src, size_t n);
 size_t			ft_strlcat(char *dst, const char *src, size_t dstsize);
-char			*ft_strcpy(char *dest, char *src);
+char			*ft_strcpy(char *dest, const char *src);
 char			*ft_strcat(char *dest, const char *src);
 int				ft_atoi(const char *str);
 
@@ -61,7 +61,7 @@ char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char			*ft_strjoin(char const *s1, char const*s2);
 char			*ft_strtrim(char const *s1, char const *set);
-char			**ft_strsplit(char const *s, char c);
+char			**ft_split(char const *s, char c);
 char			*ft_itoa(int n);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putchar_fd(char c, int fd);
