@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:16:12 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/26 12:22:51 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 18:34:42 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,14 @@
 //good
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char	*ptr_dest;
-	unsigned char	*ptr_src;
+	char	*tmp;
 
-	ptr_src = (unsigned char *) src;
-	ptr_dest = (unsigned char *)dest;
-	if (ptr_src < ptr_dest)
+	tmp = ft_strnew(n);
+	if (tmp)
 	{
-		while (n)
-		{
-			ptr_dest[n] = ptr_src[n];
-			n--;
-		}
+		tmp = ft_memcpy(tmp, src, n);
+		dest = ft_memcpy(dest, tmp, n);
 	}
-	else
-		ft_memcpy(dest, src, n);
+	free(tmp);
 	return (dest);
 }

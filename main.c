@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 11:47:42 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/26 18:10:20 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 18:21:55 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -244,3 +244,10 @@
 	p80 = strnstr(s240, s250, 15);
 	printf("%s\n", p80);
 }*/
+int main()
+{
+	char *dest;
+
+	dest = ft_memmove(dest, "bonjours", 5);
+	printf("%s\n", dest);
+}
