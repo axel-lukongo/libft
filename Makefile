@@ -6,7 +6,7 @@
 #    By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/25 16:18:48 by alukongo          #+#    #+#              #
-#    Updated: 2021/11/26 16:06:45 by alukongo         ###   ########.fr        #
+#    Updated: 2021/11/26 16:58:15 by alukongo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,7 @@ MANDATORY = ft_atoi.c\
 			ft_substr.c\
 			ft_tolower.c\
 			ft_toupper.c\
-			
+
 BONUS = ft_lstadd_back.c\
 			ft_lstadd_front.c\
 			ft_lstclear.c\

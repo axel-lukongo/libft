@@ -6,26 +6,26 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 15:29:12 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/26 15:58:42 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 16:54:22 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 //good
-void	*calloc(size_t nmemb, size_t size)
+void	*calloc(size_t count, size_t size)
 {
 	void	*ptr;
 
-	if (nmemb == 0 || size == 0)
+	if (count == 0 || size == 0)
 	{
-		nmemb = 1;
+		count = 1;
 		size = 1;
 	}
-	ptr = malloc(nmemb * size);
+	ptr = malloc(count * size);
 	if (!ptr)
 	{
 		return (0);
 	}	
-	ft_bzero(ptr, size * nmemb);
+	ft_bzero(ptr, size * count);
 	return (ptr);
 }

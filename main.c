@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 11:47:42 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/26 14:00:00 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 17:09:18 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -153,12 +153,14 @@
 	free(lst);
 	return (0);
 }*/
-/*int main() //-----ft_atoi---
+int main() //-----ft_atoi---
 {
-	int c;
-	c = ft_atoi("563");
-	printf("%d\n",c);
-}*/
+	int	c;
+
+	c = ft_atoi("+563");
+	printf("%d\n", c);
+	printf("vrai atoi %d\n", atoi("+563"));
+}
 /*int main() //-----ft_bzero-----
 {
     char array [] = { "salut"};
