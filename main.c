@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 11:47:42 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/25 15:28:51 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 14:00:00 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,8 +70,7 @@
 	printf("%s\n",str);
 	free(str);
 }*/
-/*int main()
-
+/*int main() //------ft_strdel----
 {
 	printf("[ft_strdel]\n");
 	char **tofree2;
@@ -91,17 +90,17 @@
 	printf("[expected]\n");
 	printf("yo\n(some adress)\n----------\n(null)\n0\n");
 }*/
-/*int main()
+/*int main() //------ft_itoa----
 {
 	char *str;
 	str = ft_itoa(214748364);
 	printf("%s\n",str);
 }*/
-/*int main()
+/*int main() //-----ft_putendl_fd-----
 {
 	ft_putendl_fd("salut",1);
 }*/
-/*int main()
+/*int main() //-----ft_putnbr_fd-----
 {
 	ft_putnbr_fd(25,1);
 }*/
@@ -111,7 +110,7 @@
 	ptr = ft_lstnew("21");
 	print_list(ptr);
 }*/
-/*int main()
+/*int main() //------ft_lstnew-----
 {
 	t_list *ptr1;
 	t_list *ptr2;
@@ -120,14 +119,13 @@
 	ft_lstadd_front(&ptr1,ptr2);
 	print_list(ptr1);
 }*/
-/*
-void *f(void *str)
+/*void *f(void *str) // fonction for -----ft_lstmap----
 {
 	int a = 4;
 	str = &a;
 	return(str);
 }*/
-/*int main(void)
+/*int main(void)//-----ft_lstmap----
 {
 	t_list *lst;
 	t_list *list2;
@@ -155,15 +153,14 @@ void *f(void *str)
 	free(lst);
 	return (0);
 }*/
-/*int main()
+/*int main() //-----ft_atoi---
 {
 	int c;
 	c = ft_atoi("563");
 	printf("%d\n",c);
 }*/
-/*
-int main() {
-
+/*int main() //-----ft_bzero-----
+{
     char array [] = { "salut"};
     size_t size = sizeof( char ) * 8;
     int length;
@@ -185,9 +182,8 @@ int main() {
     
     return 0;
 }*/
-/*
-int main() {
-
+/*int main() //------memset-----
+{
     char array [] = { "salut"};
     size_t size = sizeof( char ) * 8;
     int length;
@@ -220,7 +216,7 @@ int main() {
 		printf("%s\n",str[i++]);
 	}
 }*/
-/*int main()
+/*int main() //------ft_strnstr----
 {
 	printf("[ft_strnstr]\n");
 	char s22[50], s23[50];

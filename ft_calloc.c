@@ -6,12 +6,12 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 15:29:12 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/25 16:03:52 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 12:10:56 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-
+//good
 void	*calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;

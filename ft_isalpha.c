@@ -6,12 +6,12 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 11:43:31 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 11:43:34 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 12:07:03 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//good
 int	ft_isalpha(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))

@@ -6,12 +6,12 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 15:30:40 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 15:39:00 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 13:52:14 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-
+//good
 int	size_cpy(char *s1, char *set)
 {
 	int	size;
@@ -22,7 +22,7 @@ int	size_cpy(char *s1, char *set)
 	return (size);
 }
 
-char	*ft_strtrim(char *s1, char *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	char			*cpy;
 	int				i;

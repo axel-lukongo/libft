@@ -6,14 +6,14 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 13:10:17 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 13:10:51 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 13:22:40 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdio.h>
 #include"libft.h"
-
-int	ft_strlen(char *str)
+//good
+int	ft_strlen(const char *str)
 {
 	int	i;
 

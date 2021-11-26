@@ -6,14 +6,14 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 11:43:38 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 14:54:31 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 12:08:31 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 #include <ctype.h>
-
+//good
 int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);

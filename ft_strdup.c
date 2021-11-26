@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:35:06 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 12:35:37 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 13:11:18 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,21 @@
 #include<stdio.h>
 #include"libft.h"
 
-//a verifier
-char	*ft_strdup(char *src)
+//good
+char	*ft_strdup(const char *src)
 {
 	int		i;
-	int		len;
-	char	*str;
+	char	*s;
 
-	len = 0;
-	while (src[len])
-		len++;
-	str = (char *)malloc(sizeof(*str) * (len + 1));
 	i = 0;
-	while (i < len)
+	s = malloc(sizeof(char) * ft_strlen(src) + 1);
+	if (!(s))
+		return (0);
+	while (src[i])
 	{
-		str[i] = src[i];
+		s[i] = src[i];
 		i++;
 	}
-	return (str);
+	s[i] = '\0';
+	return (s);
 }

@@ -6,12 +6,12 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 15:56:01 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 15:56:05 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 14:01:53 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+//good
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')

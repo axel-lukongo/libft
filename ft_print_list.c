@@ -6,13 +6,13 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:19:53 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 12:20:27 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 12:24:19 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include<stdio.h>
-
+//good
 void	print_list(t_list *beta)
 {
 	int	*c;

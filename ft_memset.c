@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:18:19 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 16:28:56 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 12:24:08 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include"libft.h"
-
+//good
 void	*ft_memset( void *pointer, int value, size_t count )
 {
 	unsigned int	i;

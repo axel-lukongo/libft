@@ -3,20 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alukongo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/07 09:52:24 by alukongo          #+#    #+#             */
-/*   Updated: 2021/07/08 18:29:25 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 12:30:05 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
+//good
 void	ft_putnbr(int nb)
 {
 	unsigned int	nbr;

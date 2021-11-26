@@ -6,12 +6,12 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:16:12 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 12:17:04 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 12:22:51 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-
+//good
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*ptr_dest;

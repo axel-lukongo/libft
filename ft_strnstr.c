@@ -6,12 +6,12 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 14:57:16 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/25 15:26:33 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 13:39:32 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-
+//good
 char	*ft_strnstr(const char	*big, const char *little, size_t len)
 {
 	size_t	i;

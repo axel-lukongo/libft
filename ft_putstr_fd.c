@@ -6,12 +6,12 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:27:10 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 12:28:30 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 12:49:08 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-
+//good
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (s)

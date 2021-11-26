@@ -6,14 +6,14 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:13:07 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 17:01:10 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 12:20:16 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 #include <string.h>
 #include <stdio.h>
-
+//good
 int	ft_memcmp(const void *pointer1, const void *pointer2, size_t size)
 {
 	unsigned char	*ptr1;

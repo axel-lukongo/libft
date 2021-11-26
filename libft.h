@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 17:17:25 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 17:25:21 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 14:05:08 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,18 +27,18 @@ void			*ft_memchr(const void *s, int c, size_t n);
 int				ft_memcmp(const void *pointer1, const void *pointer2,
 					size_t size);
 
-int				ft_strlen(char *str);
-char			*ft_strdup(char *src);
+int				ft_strlen(const char *str);
+char			*ft_strdup(const char *src);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *str, int c);
-char			*ft_strstr(char *str, char *to_find);
+char			*ft_strstr(const char *s1, const char *s2);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 char			*ft_strncpy(char *dest, char *src, unsigned int n);
-char			*ft_strncat(char *dest, char *src, unsigned int n);
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size);
+char			*ft_strncat(char *dest, const char *src, size_t n);
+size_t			ft_strlcat(char *dst, const char *src, size_t dstsize);
 char			*ft_strcpy(char *dest, char *src);
-char			*ft_strcat(char *dest, char *src);
-int				ft_atoi(char *str);
+char			*ft_strcat(char *dest, const char *src);
+int				ft_atoi(const char *str);
 
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
@@ -48,7 +48,7 @@ int				ft_isprint(int c);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
 void			ft_putstr(char *str);
-void			ft_putchar(char c);
+void			ft_putchar(int c);
 void			ft_putnbr(int nb);
 void			*ft_memalloc(size_t size);
 void			ft_memdel(void **app);
@@ -57,10 +57,10 @@ void			ft_strdel(char **as);
 void			ft_strcrl(char *s);
 void			ft_striter(char *s, void (*f)(char *));
 void			ft_striteri(char *s, void (*f)(unsigned int, char *));
-char			*ft_substr(char *s, unsigned int start, size_t len);
+char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char			*ft_strjoin(char const *s1, char const*s2);
-char			*ft_strtrim(char *s1, char *set);
+char			*ft_strtrim(char const *s1, char const *set);
 char			**ft_strsplit(char const *s, char c);
 char			*ft_itoa(int n);
 void			ft_putendl_fd(char *s, int fd);

@@ -6,13 +6,13 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 15:39:43 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 15:55:32 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 14:00:39 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-
-char	*ft_substr(char *s, unsigned int start, size_t len)
+//good
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*str;
 

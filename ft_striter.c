@@ -6,12 +6,12 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:36:15 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 12:36:24 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 13:14:05 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-
+//good
 void	ft_striter(char *s, void (*f)(char *))
 {
 	if ((s && f))

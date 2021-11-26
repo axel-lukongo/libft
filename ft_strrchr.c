@@ -6,13 +6,13 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 13:26:03 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 13:26:07 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 13:41:17 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-//a verifier
+//good
 
 char	*ft_strrchr(const char *str, int c)
 {

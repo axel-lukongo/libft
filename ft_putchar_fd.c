@@ -6,12 +6,12 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:20:51 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 12:21:03 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 12:25:12 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-
+//good
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);

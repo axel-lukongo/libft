@@ -6,15 +6,16 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/07 10:06:12 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 17:48:53 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 12:09:50 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+//good
+int	ft_atoi(const char *str)
 {
-	int	i;
-	int	signe;
-	int	nbr;
+	long	i;
+	int		signe;
+	int		nbr;
 
 	nbr = 0;
 	signe = 1;

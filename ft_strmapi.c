@@ -6,12 +6,12 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 13:10:57 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 13:14:01 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 13:23:46 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-
+//good
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*str;

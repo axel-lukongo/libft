@@ -6,14 +6,14 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:30:23 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 12:30:53 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 12:55:33 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdio.h>
 
-//a verifier
-char	*ft_strcat(char *dest, char *src)
+//good
+char	*ft_strcat(char *dest, const char *src)
 {
 	int	i;
 	int	j;
@@ -24,10 +24,9 @@ char	*ft_strcat(char *dest, char *src)
 		i++;
 	while (src[j] != '\0')
 	{
-		dest[i] = src[j];
-		i++;
+		dest[i + j] = src[j];
 		j++;
 	}
-	dest[i] = '\0';
+	dest[i + j] = '\0';
 	return (dest);
 }

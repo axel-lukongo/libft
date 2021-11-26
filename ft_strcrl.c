@@ -6,12 +6,12 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:32:37 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/24 12:33:31 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/26 12:57:03 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-
+//good
 void	ft_strcrl(char *s)
 {
 	int	size;
