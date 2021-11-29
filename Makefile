@@ -6,7 +6,7 @@
 #    By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/25 16:18:48 by alukongo          #+#    #+#              #
-#    Updated: 2021/11/26 16:58:15 by alukongo         ###   ########.fr        #
+#    Updated: 2021/11/29 11:51:40 by alukongo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ MANDATORY = ft_atoi.c\
 			ft_print_list.c\
 			ft_putchar.c\
 			ft_putchar_fd.c\
-			ft_putendl.c\
+			ft_putendl_fd.c\
 			ft_putnbr.c\
 			ft_putnbr_fd.c\
 			ft_putstr.c\
@@ -54,6 +54,7 @@ MANDATORY = ft_atoi.c\
 			ft_strlen.c\
 			ft_strmapi.c\
 			ft_strncat.c\
+			ft_strlcpy.c\
 			ft_strncmp.c\
 			ft_strncpy.c\
 			ft_strnew.c\

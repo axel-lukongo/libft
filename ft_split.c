@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 13:26:44 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/26 16:09:51 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/29 12:03:59 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ char	**writing(char **tab, const char *s, char c, int word)
 }
 //good
 
-char	**ft_plit(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	int			word;
 	char		**tab;

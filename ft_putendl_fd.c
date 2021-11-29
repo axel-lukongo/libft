@@ -1,34 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/24 13:10:57 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/29 13:40:38 by alukongo         ###   ########.fr       */
+/*   Created: 2021/11/24 12:21:55 by alukongo          #+#    #+#             */
+/*   Updated: 2021/11/29 12:00:58 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 //good
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+void	ft_putendl_fd(char *s, int fd)
 {
-	char	*str;
-	size_t	i;
-
-	i = 0;
-	str = malloc(sizeof(char) * ft_strlen(s) + 1);
-	if (!str)
-		return (NULL);
-	if (s && f)
+	if (s)
 	{
-		while (s[i])
-		{
-			str[i] = f(i, s[i]);
-			i++;
-		}
+		ft_putstr_fd(s, fd);
+		ft_putchar_fd('\n', fd);
 	}
-	str[i] = '\0';
-	return (str);
 }
+/*
+int main()
+{
+	ft_putendl_fd("  lorem\nipsum\rdolor\tsit amet  ", 1);
+}*/
