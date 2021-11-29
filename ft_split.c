@@ -6,13 +6,14 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 13:26:44 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/29 12:03:59 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/29 18:11:06 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdlib.h>
 #include<stdio.h>
-
+//je ne gerais pas bien le cas ou il y'avais plusieur set a la fin 
+//donc j'avais une ligne en trop
 int	length_word(const char *s, char c)
 {
 	int	len;
@@ -36,7 +37,7 @@ int	nb_word(const char *s, char c)
 	{
 		while (s[i] == c)
 			i++;
-		if (s[i] != c)
+		if (s[i] != c && s[i])
 		{
 			word++;
 			while (s[i] && s[i] != c)
@@ -78,6 +79,8 @@ char	**ft_split(char const *s, char c)
 	int			word;
 	char		**tab;
 
+	while (*s == c)
+		s++;
 	word = nb_word(s, c);
 	tab = malloc(sizeof (char *) * (word + 1));
 	if (!s || !tab)

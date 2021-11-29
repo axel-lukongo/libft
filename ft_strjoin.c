@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:37:22 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/26 13:15:48 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/29 15:49:24 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include<stdio.h>
 #include"libft.h"
 //good
+//je n'avais pas rajouet +1 a mon malloc
 char	*ft_strjoin(char const *s1, char const*s2)
 {
 	char	*str;

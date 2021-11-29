@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 11:47:42 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/26 18:21:55 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/29 18:17:10 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -202,18 +202,21 @@
     printf( "\n" );
     
     return 0;
-}*/
-/*int main()//-----------ft_Split-------
+}
+*/
+/*int	main()//-----ft_Split----
 {
 	char	**str;
-	int		i = 0;
+	int		i;
 
-	str = ft_strsplit(",,,,salut,,,je,suis.axel", ',');
+	i = 0;
+	str = ft_split("444lorem444ipsum4dolor44444sit4amet,4consectetur444adipiscing4elit.4Sed4non4risus.4Suspendisse444", '4');
 	while (str[i])
 	{
-		printf("%s\n",str[i++]);
+		printf("%s\n", str[i++]);
 	}
 }*/
+/*
 /*int main() //------ft_strnstr----
 {
 	printf("[ft_strnstr]\n");
@@ -244,10 +247,14 @@
 	p80 = strnstr(s240, s250, 15);
 	printf("%s\n", p80);
 }*/
-int main()
+/*int main()//------ft_memmove------
 {
 	char *dest;
 
 	dest = ft_memmove(dest, "bonjours", 5);
 	printf("%s\n", dest);
-}
+}*/
+/*int	main(void)
+{
+	printf("%s\n", ft_itoa(0));
+}*/
