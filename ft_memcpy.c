@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:15:07 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/26 12:21:24 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/30 14:46:52 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,14 @@
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned int	i;
-	char			*ptr_dest;
-	char			*ptr_src;
+	unsigned char	*ptr_dest;
+	unsigned char	*ptr_src;
 
-	ptr_src = (char *)src;
-	ptr_dest = dest;
+	ptr_src = (unsigned char *)src;
+	ptr_dest = (unsigned char *)dest;
 	i = 0;
+	if (dest == src)
+		return (dest);
 	while (i < n)
 	{
 		ptr_dest[i] = ptr_src[i];

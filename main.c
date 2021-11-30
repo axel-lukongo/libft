@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 11:47:42 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/29 18:17:10 by alukongo         ###   ########.fr       */
+/*   Updated: 2021/11/30 17:23:34 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -204,9 +204,9 @@
     return 0;
 }
 */
-/*int	main()//-----ft_Split----
+int	main()//-----ft_Split----
 {
-	char	**str;
+	/*char	**str;
 	int		i;
 
 	i = 0;
@@ -214,9 +214,23 @@
 	while (str[i])
 	{
 		printf("%s\n", str[i++]);
+	}*/
+	//char *s = "      split       this for   me  !       ";
+	int i = 0;
+	char	**result = ft_split("", ' ');
+
+	if (!result)
+	{
+		printf("not string");
+		return (0);
 	}
-}*/
-/*
+	while (result[i])
+	{
+		printf("%s\n", result[i++]);
+	}
+	return (0);
+}
+
 /*int main() //------ft_strnstr----
 {
 	printf("[ft_strnstr]\n");

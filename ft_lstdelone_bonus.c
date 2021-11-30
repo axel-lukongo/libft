@@ -1,34 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/24 15:39:43 by alukongo          #+#    #+#             */
-/*   Updated: 2021/11/30 17:14:45 by alukongo         ###   ########.fr       */
+/*   Created: 2021/11/24 11:51:19 by alukongo          #+#    #+#             */
+/*   Updated: 2021/11/26 12:14:21 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 //good
-//je ne devais pas retourner 0 si start > que la taille de s
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	char	*str;
-
-	if (!(s))
+	if (lst)
 	{
-		return (0);
+		(del)(lst->content);
+		free(lst);
+		lst = 0;
 	}
-	if (start > (unsigned int) ft_strlen(s))
-	{
-		return (ft_calloc(1, sizeof(char)));
-	}
-	str = malloc(sizeof(char) * (len + 1));
-	if (!str)
-		return (0);
-	ft_memcpy(str, s + start, len);
-	str[len] = '\0';
-	return (str);
 }
