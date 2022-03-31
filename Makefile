@@ -6,7 +6,7 @@
 #    By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/25 16:18:48 by alukongo          #+#    #+#              #
-#    Updated: 2021/11/30 18:46:26 by alukongo         ###   ########.fr        #
+#    Updated: 2022/03/31 12:52:48 by alukongo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,6 +61,7 @@ BONUS = ft_lstadd_back_bonus.c\
 			ft_lstmap_bonus.c\
 			ft_lstnew_bonus.c\
 			ft_lstsize_bonus.c\
+			ft_list_reverse.c\
 			
 MANDATORY_SRCS	=	${MANDATORY}
 
