@@ -6,7 +6,7 @@
 /*   By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 17:17:25 by alukongo          #+#    #+#             */
-/*   Updated: 2022/08/31 14:11:44 by alukongo         ###   ########.fr       */
+/*   Updated: 2022/08/31 20:10:05 by alukongo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void			ft_memdel(void **app);
 void			ft_strdel(char **as);
 void			ft_strcrl(char *s);
 void			ft_striteri(char *s, void (*f)(unsigned int, char *));
-char			*ft_substr(char const *s, unsigned int start, size_t len);
+char			*ft_substr_lib(char const *s, unsigned int start, size_t len);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char			*ft_strjoin(char const *s1, char const*s2);
 char			*ft_strtrim(char const *s1, char const *set);

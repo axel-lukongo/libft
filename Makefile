@@ -6,7 +6,7 @@
 #    By: alukongo <alukongo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/25 16:18:48 by alukongo          #+#    #+#              #
-#    Updated: 2022/08/31 14:14:22 by alukongo         ###   ########.fr        #
+#    Updated: 2022/08/31 20:21:39 by alukongo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,6 +61,7 @@ MANDATORY = ft_atoi.c\
 			ft_lstnew.c\
 			ft_lstsize.c\
 			ft_list_reverse.c\
+			ft_malloc.c
 
 MANDATORY_SRCS	=	${MANDATORY}
 
